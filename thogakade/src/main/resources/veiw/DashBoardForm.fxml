@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardFormController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/DashBoardBackGround.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#4e3fd4" layoutX="186.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thogakade" textAlignment="CENTER" wrappingWidth="237.36004638671875">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="customersButton" buttonType="RAISED" layoutX="67.0" layoutY="88.0" onAction="#veiwCustomerButtonOnAction" ripplerFill="#fff600" style="-fx-background-color: black;" text="Veiw Customers" textFill="#0cf41f">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="itemsButton" buttonType="RAISED" layoutX="67.0" layoutY="145.0" onAction="#veiwItemsButtonOnAction" prefHeight="31.0" prefWidth="127.0" ripplerFill="#fff600" style="-fx-background-color: black;" text="Veiw Items" textFill="#0cf41f">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="placeOrderButton" buttonType="RAISED" layoutX="67.0" layoutY="200.0" onAction="#placeOrderButtonOnAction" prefHeight="31.0" prefWidth="127.0" ripplerFill="#fff600" style="-fx-background-color: black;" text="Place Order" textFill="#0cf41f">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="orderDetailButton" buttonType="RAISED" layoutX="67.0" layoutY="251.0" onAction="#orderDetailButtonOnAction" prefHeight="31.0" prefWidth="127.0" ripplerFill="#fff600" style="-fx-background-color: black;" text="Order Detail" textFill="#0cf41f">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

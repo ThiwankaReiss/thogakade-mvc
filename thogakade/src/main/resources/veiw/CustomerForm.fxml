@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerFormController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="535.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="128.66665649414062" minHeight="0.0" prefHeight="31.333328247070312" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="319.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="286.3333282470703" minHeight="10.0" prefHeight="27.333343505859375" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="293.6666564941406" minHeight="10.0" prefHeight="293.6666564941406" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="278.33331298828125" minHeight="10.0" prefHeight="29.333343505859375" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="278.33331298828125" minHeight="5.6666259765625" prefHeight="18.33331298828125" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <JFXButton fx:id="backBtn" contentDisplay="GRAPHIC_ONLY" onAction="#backBtnOnAction" prefHeight="30.0" prefWidth="25.0">
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/bck.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="260.66668701171875" minWidth="10.0" prefWidth="74.66665649414062" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="260.66668701171875" minWidth="10.0" prefWidth="14.333343505859375" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="260.66668701171875" minWidth="0.0" prefWidth="122.33331298828125" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="260.66668701171875" minWidth="9.0" prefWidth="13.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="260.66668701171875" minWidth="10.0" prefWidth="155.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="260.66668701171875" minWidth="10.0" prefWidth="12.66668701171875" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="329.66668701171875" minWidth="10.0" prefWidth="110.33331298828125" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JFXTextField fx:id="idTextField" labelFloat="true" promptText="Customer Id" />
+            <JFXTextField fx:id="nameTextField" labelFloat="true" promptText="Customer Name" GridPane.columnIndex="2" />
+            <JFXTextField fx:id="addressTextField" labelFloat="true" promptText="Customer Address" GridPane.columnIndex="4" />
+            <JFXTextField fx:id="salaryTextField" labelFloat="true" promptText="Customer Salary" GridPane.columnIndex="6" />
+         </children>
+      </GridPane>
+      <GridPane GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="341.33331298828125" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.0" minWidth="10.0" prefWidth="85.6666259765625" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="16.66668701171875" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.0" minWidth="10.0" prefWidth="87.33331298828125" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JFXButton fx:id="updateBtn" maxWidth="160.0" onAction="#updateBtnOnAction" prefHeight="25.0" prefWidth="79.0" ripplerFill="#0009ff" style="-fx-background-color: #C6FCFF;" text="Update" GridPane.columnIndex="1" />
+            <JFXButton fx:id="saveBtn" maxWidth="160.0" onAction="#saveBtnOnAction" prefHeight="25.0" prefWidth="75.0" ripplerFill="#0009ff" style="-fx-background-color: #C6FCFF;" text=" Save " GridPane.columnIndex="3" />
+         </children>
+      </GridPane>
+      <GridPane GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="0.0" prefWidth="0.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="611.0" minWidth="10.0" prefWidth="611.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="0.6666259765625" prefWidth="3.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JFXTreeTableView fx:id="tblCustomer" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="235.0" prefWidth="609.0" GridPane.columnIndex="1">
+               <columns>
+                  <TreeTableColumn fx:id="colId" maxWidth="1.7976931348623157E308" prefWidth="92.66665649414062" resizable="false" text="Customer ID" />
+                  <TreeTableColumn fx:id="colName" maxWidth="1.7976931348623157E308" prefWidth="128.33334350585938" resizable="false" text="Name" />
+                  <TreeTableColumn fx:id="colAddress" maxWidth="1.7976931348623157E308" prefWidth="184.66668701171875" resizable="false" text="Address" />
+                  <TreeTableColumn fx:id="colSalary" maxWidth="1.7976931348623157E308" prefWidth="111.33331298828125" resizable="false" text="Salary" />
+                  <TreeTableColumn fx:id="colOption" maxWidth="1.7976931348623157E308" prefWidth="91.33331298828125" resizable="false" text="Option" />
+               </columns>
+            </JFXTreeTableView>
+         </children>
+      </GridPane>
+      <GridPane GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="534.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.0" minWidth="10.0" prefWidth="101.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JFXButton fx:id="reloadBtn" maxWidth="160.0" onAction="#reloadBtnOnAction" ripplerFill="#0009ff" style="-fx-background-color: #C6FCFF;" text="Reload" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+       
+   </children>
+</GridPane>

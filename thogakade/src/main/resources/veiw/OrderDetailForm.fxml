@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrderDetailFormController">
+   <children>
+      <JFXComboBox fx:id="cmbOrderID" layoutX="43.0" layoutY="31.0" promptText="Order ID" />
+      <Label fx:id="custIdlbl" layoutX="43.0" layoutY="74.0" prefHeight="25.0" prefWidth="76.0" text="Customer Id :" />
+      <Label fx:id="custIdFillLabel" layoutX="119.0" layoutY="74.0" prefHeight="25.0" prefWidth="76.0" />
+      <Label fx:id="custNameLbl" layoutX="224.0" layoutY="74.0" prefHeight="25.0" prefWidth="46.0" text="Name :" />
+      <Label fx:id="custNameFillLabel" layoutX="268.0" layoutY="74.0" prefHeight="25.0" prefWidth="76.0" />
+      <Label fx:id="orderDatelbl" layoutX="373.0" layoutY="74.0" prefHeight="25.0" prefWidth="69.0" text="Order Date:" />
+      <Label fx:id="orderDateFillLabel" layoutX="438.0" layoutY="74.0" prefHeight="25.0" prefWidth="76.0" />
+      <Label layoutX="47.0" layoutY="345.0" prefHeight="26.0" prefWidth="50.0" text="Total : ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotal" layoutX="108.0" layoutY="345.0" prefHeight="26.0" prefWidth="116.0" text="0.00">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTreeTableView fx:id="tblOrder" layoutX="43.0" layoutY="114.0" prefHeight="231.0" prefWidth="537.0">
+         <columns>
+            <TreeTableColumn fx:id="colCode" prefWidth="100.33334350585938" text="Code" />
+            <TreeTableColumn fx:id="colDescription" prefWidth="186.3333740234375" text="Description" />
+            <TreeTableColumn fx:id="colQty" prefWidth="96.6666259765625" text="Quantity" />
+            <TreeTableColumn fx:id="colAmount" prefWidth="154.33331298828125" text="Amount" />
+         </columns>
+      </JFXTreeTableView>
+      <JFXButton fx:id="backBtn" contentDisplay="GRAPHIC_ONLY" layoutX="6.0" layoutY="4.0" onAction="#backBtnOnAction" prefHeight="30.0" prefWidth="32.0">
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/bck.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>
